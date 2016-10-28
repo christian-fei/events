@@ -19,7 +19,7 @@ command :add do |c|
     event_description = args.join(" ")
     event = Event.new(description: event_description, url: options.url)
 
-    puts event.to_s
+    puts "Added event: \n#{event}"
   end
 end
 
