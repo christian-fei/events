@@ -1,9 +1,53 @@
+GIT
+  remote: git://github.com/rspec/rspec-core.git
+  revision: 8c5717b05c820fdc91faf277164b36a2a31b6c08
+  branch: master
+  specs:
+    rspec-core (3.6.0.beta1)
+      rspec-support (= 3.6.0.beta1)
+
+GIT
+  remote: git://github.com/rspec/rspec-expectations.git
+  revision: f07af78f18abe02f2478db8a47cd341146b0ba02
+  branch: master
+  specs:
+    rspec-expectations (3.6.0.beta1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (= 3.6.0.beta1)
+
+GIT
+  remote: git://github.com/rspec/rspec-mocks.git
+  revision: c0bf45b5ceb179c51b0d38d7c91faf60a7a6048f
+  branch: master
+  specs:
+    rspec-mocks (3.6.0.beta1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (= 3.6.0.beta1)
+
+GIT
+  remote: git://github.com/rspec/rspec-support.git
+  revision: 52858b626baae90cf58d539790f6e6a6892334af
+  branch: master
+  specs:
+    rspec-support (3.6.0.beta1)
+
+GIT
+  remote: git://github.com/rspec/rspec.git
+  revision: bc209d4a2a2dfbf38ac1d470b213753aa9e654db
+  branch: master
+  specs:
+    rspec (3.6.0.beta1)
+      rspec-core (= 3.6.0.beta1)
+      rspec-expectations (= 3.6.0.beta1)
+      rspec-mocks (= 3.6.0.beta1)
+
 GEM
   remote: https://rubygems.org/
   specs:
     byebug (9.0.5)
     commander (4.4.0)
       highline (~> 1.7.2)
+    diff-lcs (1.2.5)
     highline (1.7.8)
     rb-readline (0.5.3)
 
@@ -14,6 +58,11 @@ DEPENDENCIES
   byebug
   commander
   rb-readline
+  rspec!
+  rspec-core!
+  rspec-expectations!
+  rspec-mocks!
+  rspec-support!
 
 RUBY VERSION
    ruby 2.3.1p112
