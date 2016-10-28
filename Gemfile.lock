@@ -1,15 +1,19 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    byebug (9.0.5)
     commander (4.4.0)
       highline (~> 1.7.2)
     highline (1.7.8)
+    rb-readline (0.5.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  byebug
   commander
+  rb-readline
 
 RUBY VERSION
    ruby 2.3.1p112

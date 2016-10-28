@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+
+require 'rb-readline'
+require 'byebug'
+require 'commander/import'
+require_relative './event'
+
+program :name, 'events'
+program :version, '0.0.1'
+program :description, 'Keep track of events'
+
+command :add do |c|
+  c.syntax = 'events add "<task>" [options]'
+  c.summary = 'Add an event using the available flags to add metadata'
+  c.description = 'add an event'
+  c.example 'learning a new language', 'events add "learning about elm" --url http://elm-lang.org'
+  c.option '--url URL', 'add an url'
+  c.action do |args, options|
+    event_description = args.join(" ")
+    event = Event.new
+    event.description = event_description
+    event.options = options
+
+    puts event
+  end
+end
+
